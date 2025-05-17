@@ -1,6 +1,6 @@
 # Estradeirando - Blog de Viagens e Aventuras
 
-Este é um blog estático criado com React para compartilhar aventuras, descobertas e experiências pelo Brasil e pelo mundo.
+Este é um blog estático criado com React e Next.js para compartilhar aventuras, descobertas e experiências pelo Brasil e pelo mundo.
 
 ## Características
 
@@ -15,7 +15,7 @@ Este é um blog estático criado com React para compartilhar aventuras, descober
 
 ### Pré-requisitos
 
-- React
+- Node.js (v18 ou superior)
 - npm ou yarn
 
 ### Instalação
@@ -37,6 +37,10 @@ npm run dev
 
 O site estará disponível em [http://localhost:3000](http://localhost:3000).
 
+### Estrutura de Imagens
+
+Coloque suas imagens em `public/images/estradeirando/` para centralizar as mídias do site.
+
 ### Adicionando novos posts
 
 Para adicionar novos posts ao blog, edite o arquivo `data/posts.ts` seguindo o formato existente.
@@ -46,14 +50,24 @@ Para adicionar novos posts ao blog, edite o arquivo `data/posts.ts` seguindo o f
 1. Coloque suas imagens na pasta `public/images/`
 2. Referencie-as nos posts usando o caminho `/images/nome-da-imagem.jpg`
 
-## Deploy na Vercel
+### Deploy na Vercel
 
-Este projeto está configurado para ser facilmente implantado na Vercel.
+Este projeto está pronto para ser implantado na Vercel!
 
-1. Crie uma conta na [Vercel](https://vercel.com)
-2. Conecte seu repositório GitHub
-3. Importe o projeto
-4. A Vercel detectará automaticamente que é um projeto Next.js e configurará o build corretamente
+#### Passo a passo
+
+1. Crie uma conta gratuita na [Vercel](https://vercel.com)
+2. Conecte seu repositório GitHub, GitLab ou Bitbucket à Vercel
+3. Clique em **"Add New... > Project"** e selecione o repositório do Estradeirando
+4. A Vercel detectará automaticamente que é um projeto Next.js
+5. Clique em **Deploy**
+6. Pronto! Seu site estará online em alguns segundos, com domínio gratuito fornecido pela Vercel
+
+#### Dicas
+
+- Para domínio próprio, configure em **Settings > Domains** na Vercel
+- Para variáveis de ambiente, use **Settings > Environment Variables**
+- O build e preview são automáticos a cada push no repositório
 
 ## Personalização
 
