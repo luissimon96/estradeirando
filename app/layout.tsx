@@ -1,48 +1,51 @@
-import type { Metadata } from 'next';
-import { Inter, Montserrat, Poppins, Playfair_Display } from 'next/font/google';
-import './globals.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
+import type { Metadata } from 'next'
+import { Inter, Merriweather } from 'next/font/google'
+import './globals.css'
 
-const inter = Inter({ subsets: ['latin'] });
-const poppins = Poppins({
-  weight: ['300', '400', '500', '600', '700'],
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
+const merriweather = Merriweather({
+  weight: ['400', '700'],
   subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-poppins',
-});
-const montserrat = Montserrat({
-  weight: ['400', '500', '600', '700', '800'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-montserrat',
-});
-const playfair = Playfair_Display({
-  weight: ['400', '500', '600', '700'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-playfair',
-});
+  variable: '--font-merriweather'
+})
 
 export const metadata: Metadata = {
   title: 'Estradeirando - Blog de Viagens e Aventuras',
-  description: 'Compartilhando aventuras, descobertas e experiências pelo Brasil e pelo mundo.',
-};
+  description: 'Compartilhando aventuras, descobertas e experiências pelo Brasil e pelo mundo. Um blog sobre viagens, fé e a paixão pela estrada.',
+  keywords: 'viagens, blog de viagens, Brasil, aventuras, estrada, turismo, fé, Deus',
+  authors: [{ name: 'Estradeirando' }],
+  icons: {
+    icon: '/icons/favicon.svg',
+    apple: '/icons/favicon.svg',
+  },
+  openGraph: {
+    title: 'Estradeirando - Blog de Viagens e Aventuras',
+    description: 'Compartilhando aventuras, descobertas e experiências pelo Brasil e pelo mundo.',
+    url: 'https://www.estradeirando.com.br',
+    siteName: 'Estradeirando',
+    images: [
+      {
+        url: '/images/estradeirando/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Estradeirando - Blog de Viagens',
+      },
+    ],
+    locale: 'pt_BR',
+    type: 'website',
+  },
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
-    <html lang="pt-BR" className={`${montserrat.variable} ${poppins.variable} ${playfair.variable} scroll-smooth`}>
-      <body className={`${poppins.className} min-h-screen flex flex-col bg-travel-sand`}>
-        <Header />
-        <main className="flex-grow w-full">
-          {children}
-        </main>
-        <Footer />
+    <html lang="pt-BR" className={`${inter.variable} ${merriweather.variable}`}>
+      <body className="min-h-screen bg-estradeirando-light">
+        {children}
       </body>
     </html>
-  );
-}
+  )
+} 

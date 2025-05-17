@@ -1,11 +1,11 @@
 # Estradeirando - Blog de Viagens e Aventuras
 
-Este é um blog estático criado com Next.js para compartilhar aventuras, descobertas e experiências pelo Brasil e pelo mundo.
+Este é um blog estático criado com React para compartilhar aventuras, descobertas e experiências pelo Brasil e pelo mundo.
 
 ## Características
 
-- Design responsivo com Tailwind CSS
-- Blog estático com posts armazenados em arquivos TypeScript
+- Design responsivo
+- Blog Inovador
 - Páginas de posts individuais
 - Sistema de tags para categorizar conteúdo
 - Otimizado para SEO
@@ -15,7 +15,7 @@ Este é um blog estático criado com Next.js para compartilhar aventuras, descob
 
 ### Pré-requisitos
 
-- Node.js 18.17 ou superior
+- React
 - npm ou yarn
 
 ### Instalação
@@ -24,7 +24,6 @@ Este é um blog estático criado com Next.js para compartilhar aventuras, descob
 2. Instale as dependências:
 
 ```bash
-cd estradeirando-blog
 npm install
 ```
 

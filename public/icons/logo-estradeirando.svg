@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="96" height="96" viewBox="0 0 96 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .globo-animado {
+      transform-origin: 48px 48px;
+      animation: girar 6s linear infinite;
+    }
+    @keyframes girar {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    .estrada-animada {
+      stroke-dasharray: 120;
+      stroke-dashoffset: 120;
+      animation: estrada-move 3s ease-in-out infinite alternate;
+    }
+    @keyframes estrada-move {
+      to { stroke-dashoffset: 0; }
+    }
+  </style>
+  <!-- Globo -->
+  <g class="globo-animado">
+    <circle cx="48" cy="48" r="44" fill="#E0F7F5" stroke="#00BFA5" stroke-width="4"/>
+    <!-- Continentes -->
+    <ellipse cx="48" cy="48" rx="28" ry="18" fill="#00BFA5" fill-opacity="0.25"/>
+    <ellipse cx="60" cy="40" rx="10" ry="5" fill="#00BFA5" fill-opacity="0.4"/>
+    <ellipse cx="36" cy="60" rx="8" ry="4" fill="#00BFA5" fill-opacity="0.4"/>
+    <!-- Estrada sinuosa -->
+    <path class="estrada-animada" d="M20 70 Q40 40 48 48 Q56 56 76 26" stroke="#FFD600" stroke-width="4" fill="none" stroke-linecap="round"/>
+    <!-- Sol -->
+    <circle cx="76" cy="20" r="6" fill="#FFD600" fill-opacity="0.8"/>
+  </g>
+</svg> 
