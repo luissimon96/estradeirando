@@ -1,13 +1,24 @@
 import Image from 'next/image'
 
-const fotos = [
+const fotos: string[] = [
   '/images/estradeirando/post-1.jpg',
   '/images/estradeirando/hero-bg.jpg',
   '/images/estradeirando/about.jpg',
+  '/images/estradeirando/about-hero.jpg',
+  '/images/estradeirando/family.jpg',
+  '/images/estradeirando/20250406_140018.jpg',
 ]
 
-const videos = [
-  // Exemplo: '/videos/estradeirando/viagem1.mp4',
+const videos: string[] = [
+  '/videos/estradeirando/20250406_104946.mp4',
+  '/videos/estradeirando/20250406_103454.mp4',
+  '/videos/estradeirando/20250406_110728.mp4',
+  '/videos/estradeirando/20250406_140556.mp4',
+  '/videos/estradeirando/20250406_142132.mp4',
+  '/videos/estradeirando/20250406_140818.mp4',
+  '/videos/estradeirando/20250406_144140.mp4',
+  '/videos/estradeirando/20250406_160209.mp4',
+  '/videos/estradeirando/20250406_145201.mp4',
 ]
 
 export default function DescobrindoOBrasil() {
