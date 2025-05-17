@@ -47,18 +47,18 @@ export default function Home() {
             <article className="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:scale-105">
               <div className="relative h-48">
                 <Image
-                  src="/images/estradeirando/post-1.jpg"
-                  alt="Post sobre viagem"
+                  src="/images/montagempulse/capa.jpg"
+                  alt="Post sobre montagem"
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-6">
-                <h3 className="mb-2">Descobrindo o Brasil</h3>
+                <h3 className="mb-2">Montagem Motorhome Fiat Pulse</h3>
                 <p className="text-gray-600 mb-4">
-                  Uma jornada incrível pelas estradas do nosso país...
+                  Uma jornada incrível construíndo nosso próprio lar em um carro.
                 </p>
-                <Link href="/posts/descobrindo-o-brasil" className="btn btn-primary">
+                <Link href="/posts/montagem-do-motorhome" className="btn btn-primary">
                   Ler mais
                 </Link>
               </div>

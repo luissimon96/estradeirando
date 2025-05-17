@@ -1,0 +1,13 @@
+<svg width="1200" height="600" viewBox="0 0 1200 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="600" fill="#E0F7F5"/>
+  <ellipse cx="600" cy="600" rx="700" ry="200" fill="#B2DFDB"/>
+  <ellipse cx="600" cy="500" rx="500" ry="120" fill="#80CBC4"/>
+  <ellipse cx="600" cy="550" rx="300" ry="60" fill="#4DB6AC"/>
+  <path d="M600 600 Q650 400 800 400 Q950 400 1000 600" stroke="#FFD600" stroke-width="16" fill="none"/>
+  <path d="M600 600 Q550 400 400 400 Q250 400 200 600" stroke="#FFD600" stroke-width="16" fill="none"/>
+  <circle cx="1000" cy="100" r="60" fill="#FFD600" fill-opacity="0.7"/>
+  <rect x="0" y="400" width="1200" height="200" fill="#388E3C"/>
+  <rect x="0" y="500" width="1200" height="100" fill="#2E7D32"/>
+  <text x="50%" y="55%" text-anchor="middle" fill="#1A365D" font-size="64" font-family="Merriweather, serif" font-weight="bold">Estradeirando</text>
+  <text x="50%" y="65%" text-anchor="middle" fill="#fff" font-size="32" font-family="Inter, sans-serif">Aventura, fé e estrada</text>
+</svg> 
