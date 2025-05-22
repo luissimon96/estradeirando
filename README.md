@@ -1,3 +1,59 @@
+# Estradeirando
+
+Site pessoal/blog construído com Next.js, TypeScript e Tailwind CSS.
+
+## Estrutura do Projeto
+
+```
+├── app/                    # Pasta principal da aplicação Next.js
+│   ├── components/        # Componentes React
+│   ├── posts/            # Páginas de posts
+│   ├── contato/          # Página de contato
+│   └── sobre/            # Página sobre
+├── lib/                   # Funções utilitárias e helpers
+├── hooks/                # Hooks personalizados
+├── types/                # Definições de tipos TypeScript
+├── constants/            # Constantes do projeto
+├── services/             # Serviços e integrações
+├── styles/               # Estilos globais e temas
+└── config/               # Configurações do projeto
+```
+
+## Scripts Disponíveis
+
+- `npm run dev` - Inicia o servidor de desenvolvimento
+- `npm run build` - Cria a build de produção
+- `npm run start` - Inicia o servidor de produção
+- `npm run lint` - Executa o linter
+- `npm run format` - Formata o código com Prettier
+- `npm run type-check` - Verifica os tipos TypeScript
+
+## Tecnologias Utilizadas
+
+- Next.js 14
+- TypeScript
+- Tailwind CSS
+- ESLint
+- Prettier
+- Husky
+- lint-staged
+
+## Padrões de Código
+
+- Componentes: PascalCase (ex: `Button.tsx`)
+- Hooks: camelCase com prefixo 'use' (ex: `useAuth.ts`)
+- Utilitários: camelCase (ex: `formatDate.ts`)
+- Tipos/Interfaces: PascalCase com prefixo 'I' para interfaces (ex: `IUser.ts`)
+- Constantes: UPPER_SNAKE_CASE (ex: `API_ENDPOINTS.ts`)
+
+## Contribuição
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova feature'`)
+4. Push para a branch (`git push origin feature/nova-feature`)
+5. Abra um Pull Request
+
 # Estradeirando - Blog de Viagens e Aventuras
 
 Este é um blog estático criado com React e Next.js para compartilhar aventuras, descobertas e experiências pelo Brasil e pelo mundo.
